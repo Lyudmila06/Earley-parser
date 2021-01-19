@@ -4,6 +4,16 @@
 
 #include "parse_tree.h"
 
+void parse_tree::printRules(vector<int> vec) {
+    for (int i = 0; i < vec.size(); i++) {
+        cout << "\n" << vec[i] << ") " << erl->gr_.symbols_[ erl->gr_.rules_[vec[i]].left_nonterminal_ ].name_ << " -> ";
+        for(unsigned int _rp_index = 0; _rp_index < erl->gr_.rules_[vec[i]].right_part_.size(); ++ _rp_index ) {
+            std::cout << erl->gr_.symbols_[ erl->gr_.rules_[vec[i]].right_part_[ _rp_index ] ].name_;
+        }
+    }
+}
+
+
 
 void parse_tree::printSituation(items_t::iterator it_item) { //просто печатает выбранную ситуацию
         std::cout << "[" << erl->gr_.symbols_[ erl->gr_.rules_[ (*it_item).rule_index_ ].left_nonterminal_ ].name_ << "-->";
@@ -68,6 +78,7 @@ bool parse_tree::isR(symbol x, unsigned int r){
 
 void parse_tree::R(items_t::iterator& a, int j){
     pi_.push_back((*a).rule_index_); //1)
+    print_pi();
     cout << "pi_: " << (*a).rule_index_ << "\n";
     //2)
     int k = erl->gr_.rules_[ (*a).rule_index_ ].right_part_.size();
@@ -89,7 +100,7 @@ void parse_tree::R(items_t::iterator& a, int j){
             items_t::iterator it_item = (*it).items_.begin(), end_item = (*it).items_.end();
             for (; it_item != end_item; ++it_item) {
                 x = erl->gr_.symbols_[erl->gr_.rules_[(*it_item).rule_index_].left_nonterminal_];
-                cout <<  "\n Start 3b)  Xk:" << xk.name_ << "   A:" << x.name_
+                cout <<  " Start 3b)  Xk:" << xk.name_ << "   A:" << x.name_
                 << "   dot:" << it_item->dot_pos_ << "   end:" << erl->gr_.rules_[ it_item->rule_index_ ].right_part_.size() << "\n";
                 if (x.name_ == xk.name_ && it_item->dot_pos_ == erl->gr_.rules_[ it_item->rule_index_ ].right_part_.size()) {
                     r = (*it_item).origin_;
@@ -114,7 +125,7 @@ void parse_tree::R(items_t::iterator& a, int j){
 void parse_tree::print_pi() {
     //for (int i : pi_) cout << i;
     cout << "\n Pi = ";
-    for (int i = 0; i < pi_.size(); i++) cout << pi_[i];
+    for (int i = 0; i < pi_.size(); i++) cout << pi_[i] << "_";
 }
 
 

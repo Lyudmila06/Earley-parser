@@ -20,6 +20,7 @@ public:
     bool isR(symbol x, unsigned int r);
     void print_pi();
     void printSituation(items_t::iterator it_item);
+    void printRules(vector<int> num);
 
 };
 
