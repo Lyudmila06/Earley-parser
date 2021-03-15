@@ -326,36 +326,6 @@ void early_run(lexical_analyzer la) {
     gr.add_symbol_to_right_part_of_rule( ComplxOp_1, "ComplxOpConstr" );
     gr.add_symbol_to_right_part_of_rule( ComplxOp_1, "separator }" );
 
-    unsigned int ComplxOpConstr_1 = gr.add_rule( "ComplxOpConstr --> ReturnSt ;" );
-    gr.add_left_nonterminal_to_rule(ComplxOpConstr_1, "ComplxOpConstr" );
-    gr.add_symbol_to_right_part_of_rule(ComplxOpConstr_1, "ReturnSt" );
-    gr.add_symbol_to_right_part_of_rule(ComplxOpConstr_1, "separator ;" );
-
-    unsigned int ComplxOpConstr_2 = gr.add_rule( "ComplxOpConstr --> VarDec" );
-    gr.add_left_nonterminal_to_rule( ComplxOpConstr_2, "ComplxOpConstr" );
-    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_2, "VarDec" );
-
-    unsigned int ComplxOpConstr_3 = gr.add_rule( "ComplxOpConstr --> ExprAssign;" );
-    gr.add_left_nonterminal_to_rule(ComplxOpConstr_3, "ComplxOpConstr" );
-    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_3, "ExprAssign" );
-    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_3, "separator ;" );
-
-
-    unsigned int ComplxOpConstr_4 = gr.add_rule( "ComplxOpConstr --> LoopOpPrec" );
-    gr.add_left_nonterminal_to_rule(ComplxOpConstr_4, "ComplxOpConstr" );
-    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_4, "LoopOpPrec" );
-
-    unsigned int ComplxOpConstr_5 = gr.add_rule( "ComplxOpConstr --> CondOp" );
-    gr.add_left_nonterminal_to_rule( ComplxOpConstr_5, "ComplxOpConstr" );
-    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_5, "CondOp" );
-
-    unsigned int ComplxOpConstr_6 = gr.add_rule( "ComplxOpConstr --> LoopOpStep" );
-    gr.add_left_nonterminal_to_rule(ComplxOpConstr_6, "ComplxOpConstr" );
-    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_6, "LoopOpStep" );
-
-    unsigned int ComplxOpConstr_7 = gr.add_rule( "ComplxOpConstr --> LoopOpPost" );
-    gr.add_left_nonterminal_to_rule( ComplxOpConstr_7, "ComplxOpConstr" );
-    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_7, "LoopOpPost" );
 
     unsigned int ComplxOpConstr_21 = gr.add_rule( "ComplxOpConstr --> VarDec" );
     gr.add_left_nonterminal_to_rule( ComplxOpConstr_21, "ComplxOpConstr" );
@@ -388,6 +358,39 @@ void early_run(lexical_analyzer la) {
     gr.add_left_nonterminal_to_rule( ComplxOpConstr_71, "ComplxOpConstr" );
     gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_71, "LoopOpPost" );
     gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_71, "ComplxOpConstr" );
+
+    unsigned int ComplxOpConstr_1 = gr.add_rule( "ComplxOpConstr --> ReturnSt ;" );
+    gr.add_left_nonterminal_to_rule(ComplxOpConstr_1, "ComplxOpConstr" );
+    gr.add_symbol_to_right_part_of_rule(ComplxOpConstr_1, "ReturnSt" );
+    gr.add_symbol_to_right_part_of_rule(ComplxOpConstr_1, "separator ;" );
+
+    unsigned int ComplxOpConstr_2 = gr.add_rule( "ComplxOpConstr --> VarDec" );
+    gr.add_left_nonterminal_to_rule( ComplxOpConstr_2, "ComplxOpConstr" );
+    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_2, "VarDec" );
+
+    unsigned int ComplxOpConstr_3 = gr.add_rule( "ComplxOpConstr --> ExprAssign;" );
+    gr.add_left_nonterminal_to_rule(ComplxOpConstr_3, "ComplxOpConstr" );
+    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_3, "ExprAssign" );
+    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_3, "separator ;" );
+
+
+    unsigned int ComplxOpConstr_4 = gr.add_rule( "ComplxOpConstr --> LoopOpPrec" );
+    gr.add_left_nonterminal_to_rule(ComplxOpConstr_4, "ComplxOpConstr" );
+    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_4, "LoopOpPrec" );
+
+    unsigned int ComplxOpConstr_5 = gr.add_rule( "ComplxOpConstr --> CondOp" );
+    gr.add_left_nonterminal_to_rule( ComplxOpConstr_5, "ComplxOpConstr" );
+    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_5, "CondOp" );
+
+    unsigned int ComplxOpConstr_6 = gr.add_rule( "ComplxOpConstr --> LoopOpStep" );
+    gr.add_left_nonterminal_to_rule(ComplxOpConstr_6, "ComplxOpConstr" );
+    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_6, "LoopOpStep" );
+
+    unsigned int ComplxOpConstr_7 = gr.add_rule( "ComplxOpConstr --> LoopOpPost" );
+    gr.add_left_nonterminal_to_rule( ComplxOpConstr_7, "ComplxOpConstr" );
+    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_7, "LoopOpPost" );
+
+
 
 
 
@@ -451,8 +454,12 @@ void early_run(lexical_analyzer la) {
         std::cout << "success\n";
         parser.print();
         parse_tree tree;
-        tree.parse_run(parser);
-        tree.printRules(tree.pi_);
+        //tree.parse_run(parser);
+        //tree.printRules(tree.pi_);
+        semantic_analyzer sem(lex);
+        sem.analyze_vars(la);
+
+
     }
     else {
         //parser.print();

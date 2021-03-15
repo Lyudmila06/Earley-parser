@@ -49,8 +49,8 @@ void parse_tree::parse_run(earley& erl) {
 //         cout << erl.gr_.symbols_[ erl.gr_.rules_[ (*it_item).rule_index_ ].right_part_[ it_item->dot_pos_ ] ].name_ << "\n";
 //        cout << (*it_item).dot_pos_ << " " << erl.gr_.rules_[ (*it_item).rule_index_ ].right_part_.size() << "\n";
         if ((*it_item).dot_pos_ == erl.gr_.rules_[ (*it_item).rule_index_ ].right_part_.size() && (*it_item).origin_ == 0){ // если ситуация вида [S -> a*, 0]
-            cout << "\n Get situation";
-            printSituation(it_item);
+            //cout << "\n Get situation";
+            //printSituation(it_item);
             R(it_item, n);
             break;
         }
@@ -104,7 +104,6 @@ void parse_tree::R(items_t::iterator& a, int j){
                 //<< "   dot:" << it_item->dot_pos_ << "   end:" << erl->gr_.rules_[ it_item->rule_index_ ].right_part_.size() << "\n";
                 if (x.name_ == xk.name_ && it_item->dot_pos_ == erl->gr_.rules_[ it_item->rule_index_ ].right_part_.size()) {
                     r = (*it_item).origin_;
-                    //3б) "...где некоторый r таков..."
                     if (isR(x, r)) {
                         //cout << "R(" << erl->gr_.symbols_[erl->gr_.rules_[(*it_item).rule_index_].left_nonterminal_].name_ << "->" << erl->gr_.symbols_[erl->gr_.rules_[(*it_item).rule_index_].right_part_[0]].name_ << "...," << c << ")\n";
                         R(it_item, c);

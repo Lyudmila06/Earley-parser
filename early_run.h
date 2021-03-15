@@ -9,7 +9,7 @@
 #include <iostream>
 #include "lexical.h"
 #include "parse_tree.h"
-
+#include "semantic_analyzer.h"
 
 using namespace std;
 

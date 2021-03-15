@@ -10,16 +10,20 @@ class semantic_analyzer {
     public:
         vector<int> tree;
         earley *earl;
+        lexer lex_;
+        string vars[1000][2];
+        string undef_vars[1000];
+        int count_vars = 0;
 
-
-    semantic_analyzer(vector<int> pi_, earley *earl)
+    semantic_analyzer(lexer& _lex)
     {
-        this->tree = pi_;
-        this->earl = earl;
+        //this->tree = pi_;
+        //this->earl = earl;
+        this->lex_ = _lex;
     }
 
     void semantic_run();
-    void analyze_vars();
+    void analyze_vars(lexical_analyzer la);
     void analyze_expr();
     void analyze_keywords();
 

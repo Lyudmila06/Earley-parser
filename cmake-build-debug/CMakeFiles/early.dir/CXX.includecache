@@ -14,20 +14,6 @@ lexer.h
 lexical.h
 /cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/lexical.h
 
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/early_run.cpp
-early_run.h
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/early_run.h
-
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/early_run.h
-early.h
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/early.h
-iostream
--
-lexical.h
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/lexical.h
-parse_tree.h
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/parse_tree.h
-
 /cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/gramma.h
 vector
 -
@@ -63,4 +49,20 @@ lexer.h
 /cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/lexer.h
 lexical.h
 /cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/lexical.h
+
+/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/semantic_analyzer.cpp
+semantic_analyzer.h
+/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/semantic_analyzer.h
+
+/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/semantic_analyzer.h
+early.h
+/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/early.h
+gramma.h
+/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/gramma.h
+lexer.h
+/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/lexer.h
+lexical.h
+/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/lexical.h
+parse_tree.h
+/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/parse_tree.h
 
