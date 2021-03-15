@@ -1,11 +1,11 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/early.dir/early.cpp.obj"
-  "CMakeFiles/early.dir/early_run.cpp.obj"
-  "CMakeFiles/early.dir/lexical.cpp.obj"
-  "CMakeFiles/early.dir/main.cpp.obj"
-  "CMakeFiles/early.dir/parse_tree.cpp.obj"
+  "CMakeFiles/early.dir/early.cpp.o"
+  "CMakeFiles/early.dir/early_run.cpp.o"
+  "CMakeFiles/early.dir/lexical.cpp.o"
+  "CMakeFiles/early.dir/main.cpp.o"
+  "CMakeFiles/early.dir/parse_tree.cpp.o"
+  "CMakeFiles/early.dir/semantic_analyzer.cpp.o"
   "early.exe"
-  "early.exe.manifest"
   "early.pdb"
   "libearly.dll.a"
 )

@@ -62,7 +62,7 @@ void parse_tree::parse_run(earley& erl) {
 
 bool parse_tree::isR(symbol x, unsigned int r){
     states_t::iterator it = erl->states_.begin();
-    cout << " r: " << r << " \n";
+    //cout << " r: " << r << " \n";
     it += r;
     items_t::iterator it_item = (*it).items_.begin(), end_item = (*it).items_.end();
     for(int i = 0 ; it_item != end_item; ++ it_item, i++ ) {
@@ -78,19 +78,19 @@ bool parse_tree::isR(symbol x, unsigned int r){
 
 void parse_tree::R(items_t::iterator& a, int j){
     pi_.push_back((*a).rule_index_); //1)
-    print_pi();
-    cout << "pi_: " << (*a).rule_index_ << "\n";
+    //print_pi();
+    //cout << "pi_: " << (*a).rule_index_ << "\n";
     //2)
     int k = erl->gr_.rules_[ (*a).rule_index_ ].right_part_.size();
     int c = j;
-    cout << "k:" << k << "; c:" << c << ";\n" ;
+    //cout << "k:" << k << "; c:" << c << ";\n" ;
     while (k != 0) {
         xk = erl->gr_.symbols_[erl->gr_.rules_[(*a).rule_index_].right_part_[k-1]];
-        cout << "xk: " << xk.name_ << " (term:" << xk.is_terminal_ << ")\n";
+        //cout << "xk: " << xk.name_ << " (term:" << xk.is_terminal_ << ")\n";
         if (xk.is_terminal_) { //3а)
             k--;
             c--;
-            cout << "k-- , c-- \n";
+            //cout << "k-- , c-- \n";
         }
         if (!xk.is_terminal_) { //3б)
             states_t::iterator it = erl->states_.begin();
@@ -100,17 +100,17 @@ void parse_tree::R(items_t::iterator& a, int j){
             items_t::iterator it_item = (*it).items_.begin(), end_item = (*it).items_.end();
             for (; it_item != end_item; ++it_item) {
                 x = erl->gr_.symbols_[erl->gr_.rules_[(*it_item).rule_index_].left_nonterminal_];
-                cout <<  " Start 3b)  Xk:" << xk.name_ << "   A:" << x.name_
-                << "   dot:" << it_item->dot_pos_ << "   end:" << erl->gr_.rules_[ it_item->rule_index_ ].right_part_.size() << "\n";
+                //cout <<  " Start 3b)  Xk:" << xk.name_ << "   A:" << x.name_
+                //<< "   dot:" << it_item->dot_pos_ << "   end:" << erl->gr_.rules_[ it_item->rule_index_ ].right_part_.size() << "\n";
                 if (x.name_ == xk.name_ && it_item->dot_pos_ == erl->gr_.rules_[ it_item->rule_index_ ].right_part_.size()) {
                     r = (*it_item).origin_;
                     //3б) "...где некоторый r таков..."
                     if (isR(x, r)) {
-                        cout << "R(" << erl->gr_.symbols_[erl->gr_.rules_[(*it_item).rule_index_].left_nonterminal_].name_ << "->" << erl->gr_.symbols_[erl->gr_.rules_[(*it_item).rule_index_].right_part_[0]].name_ << "...," << c << ")\n";
+                        //cout << "R(" << erl->gr_.symbols_[erl->gr_.rules_[(*it_item).rule_index_].left_nonterminal_].name_ << "->" << erl->gr_.symbols_[erl->gr_.rules_[(*it_item).rule_index_].right_part_[0]].name_ << "...," << c << ")\n";
                         R(it_item, c);
                         k--;
                         c = r;
-                        cout << "k:" << k << "; c:" << c << ";\n" ;
+                        //cout << "k:" << k << "; c:" << c << ";\n" ;
                         break;
                     }
                 }

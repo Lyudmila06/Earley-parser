@@ -3,4 +3,4 @@ project(early)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(early main.cpp early.cpp early.h lexer.h gramma.h lexical.cpp lexical.h early_run.cpp early_run.h parse_tree.h parse_tree.cpp)
+add_executable(early main.cpp early.cpp early.h lexer.h gramma.h lexical.cpp lexical.h early_run.cpp early_run.h parse_tree.h parse_tree.cpp semantic_analyzer.cpp semantic_analyzer.h)

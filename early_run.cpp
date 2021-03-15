@@ -331,54 +331,64 @@ void early_run(lexical_analyzer la) {
     gr.add_symbol_to_right_part_of_rule(ComplxOpConstr_1, "ReturnSt" );
     gr.add_symbol_to_right_part_of_rule(ComplxOpConstr_1, "separator ;" );
 
-    unsigned int ComplxOpConstr_2 = gr.add_rule( "ComplxOpConstr --> ExprAssign;" );
-    gr.add_left_nonterminal_to_rule(ComplxOpConstr_2, "ComplxOpConstr" );
-    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_2, "ExprAssign" );
-    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_2, "separator ;" );
+    unsigned int ComplxOpConstr_2 = gr.add_rule( "ComplxOpConstr --> VarDec" );
+    gr.add_left_nonterminal_to_rule( ComplxOpConstr_2, "ComplxOpConstr" );
+    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_2, "VarDec" );
 
-
-    unsigned int ComplxOpConstr_3 = gr.add_rule( "ComplxOpConstr --> LoopOpPrec" );
+    unsigned int ComplxOpConstr_3 = gr.add_rule( "ComplxOpConstr --> ExprAssign;" );
     gr.add_left_nonterminal_to_rule(ComplxOpConstr_3, "ComplxOpConstr" );
-    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_3, "LoopOpPrec" );
+    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_3, "ExprAssign" );
+    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_3, "separator ;" );
 
-    unsigned int ComplxOpConstr_4 = gr.add_rule( "ComplxOpConstr --> CondOp" );
-    gr.add_left_nonterminal_to_rule( ComplxOpConstr_4, "ComplxOpConstr" );
-    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_4, "CondOp" );
 
-    unsigned int ComplxOpConstr_5 = gr.add_rule( "ComplxOpConstr --> LoopOpStep" );
-    gr.add_left_nonterminal_to_rule(ComplxOpConstr_5, "ComplxOpConstr" );
-    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_5, "LoopOpStep" );
+    unsigned int ComplxOpConstr_4 = gr.add_rule( "ComplxOpConstr --> LoopOpPrec" );
+    gr.add_left_nonterminal_to_rule(ComplxOpConstr_4, "ComplxOpConstr" );
+    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_4, "LoopOpPrec" );
 
-    unsigned int ComplxOpConstr_6 = gr.add_rule( "ComplxOpConstr --> LoopOpPost" );
-    gr.add_left_nonterminal_to_rule( ComplxOpConstr_6, "ComplxOpConstr" );
-    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_6, "LoopOpPost" );
+    unsigned int ComplxOpConstr_5 = gr.add_rule( "ComplxOpConstr --> CondOp" );
+    gr.add_left_nonterminal_to_rule( ComplxOpConstr_5, "ComplxOpConstr" );
+    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_5, "CondOp" );
 
-    unsigned int ComplxOpConstr_21 = gr.add_rule( "ComplxOpConstr --> ExprAssign;" );
-    gr.add_left_nonterminal_to_rule(ComplxOpConstr_21, "ComplxOpConstr" );
-    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_21, "ExprAssign" );
-    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_21, "separator ;" );
+    unsigned int ComplxOpConstr_6 = gr.add_rule( "ComplxOpConstr --> LoopOpStep" );
+    gr.add_left_nonterminal_to_rule(ComplxOpConstr_6, "ComplxOpConstr" );
+    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_6, "LoopOpStep" );
+
+    unsigned int ComplxOpConstr_7 = gr.add_rule( "ComplxOpConstr --> LoopOpPost" );
+    gr.add_left_nonterminal_to_rule( ComplxOpConstr_7, "ComplxOpConstr" );
+    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_7, "LoopOpPost" );
+
+    unsigned int ComplxOpConstr_21 = gr.add_rule( "ComplxOpConstr --> VarDec" );
+    gr.add_left_nonterminal_to_rule( ComplxOpConstr_21, "ComplxOpConstr" );
+    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_21, "VarDec" );
     gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_21, "ComplxOpConstr" );
 
-
-    unsigned int ComplxOpConstr_31 = gr.add_rule( "ComplxOpConstr --> LoopOpPrec" );
+    unsigned int ComplxOpConstr_31 = gr.add_rule( "ComplxOpConstr --> ExprAssign;" );
     gr.add_left_nonterminal_to_rule(ComplxOpConstr_31, "ComplxOpConstr" );
-    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_31, "LoopOpPrec" );
+    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_31, "ExprAssign" );
+    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_31, "separator ;" );
     gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_31, "ComplxOpConstr" );
 
-    unsigned int ComplxOpConstr_41 = gr.add_rule( "ComplxOpConstr --> CondOp" );
-    gr.add_left_nonterminal_to_rule( ComplxOpConstr_41, "ComplxOpConstr" );
-    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_41, "CondOp" );
+
+    unsigned int ComplxOpConstr_41 = gr.add_rule( "ComplxOpConstr --> LoopOpPrec" );
+    gr.add_left_nonterminal_to_rule(ComplxOpConstr_41, "ComplxOpConstr" );
+    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_41, "LoopOpPrec" );
     gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_41, "ComplxOpConstr" );
 
-    unsigned int ComplxOpConstr_51 = gr.add_rule( "ComplxOpConstr --> LoopOpStep" );
-    gr.add_left_nonterminal_to_rule(ComplxOpConstr_51, "ComplxOpConstr" );
-    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_51, "LoopOpStep" );
+    unsigned int ComplxOpConstr_51 = gr.add_rule( "ComplxOpConstr --> CondOp" );
+    gr.add_left_nonterminal_to_rule( ComplxOpConstr_51, "ComplxOpConstr" );
+    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_51, "CondOp" );
     gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_51, "ComplxOpConstr" );
 
-    unsigned int ComplxOpConstr_61 = gr.add_rule( "ComplxOpConstr --> LoopOpPost" );
-    gr.add_left_nonterminal_to_rule( ComplxOpConstr_61, "ComplxOpConstr" );
-    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_61, "LoopOpPost" );
+    unsigned int ComplxOpConstr_61 = gr.add_rule( "ComplxOpConstr --> LoopOpStep" );
+    gr.add_left_nonterminal_to_rule(ComplxOpConstr_61, "ComplxOpConstr" );
+    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_61, "LoopOpStep" );
     gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_61, "ComplxOpConstr" );
+
+    unsigned int ComplxOpConstr_71 = gr.add_rule( "ComplxOpConstr --> LoopOpPost" );
+    gr.add_left_nonterminal_to_rule( ComplxOpConstr_71, "ComplxOpConstr" );
+    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_71, "LoopOpPost" );
+    gr.add_symbol_to_right_part_of_rule( ComplxOpConstr_71, "ComplxOpConstr" );
+
 
 
     /////??????

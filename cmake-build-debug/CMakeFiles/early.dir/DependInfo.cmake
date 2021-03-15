@@ -4,11 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Lyudmila/Desktop/Early-early/early/early.cpp" "C:/Users/Lyudmila/Desktop/Early-early/early/cmake-build-debug/CMakeFiles/early.dir/early.cpp.obj"
-  "C:/Users/Lyudmila/Desktop/Early-early/early/early_run.cpp" "C:/Users/Lyudmila/Desktop/Early-early/early/cmake-build-debug/CMakeFiles/early.dir/early_run.cpp.obj"
-  "C:/Users/Lyudmila/Desktop/Early-early/early/lexical.cpp" "C:/Users/Lyudmila/Desktop/Early-early/early/cmake-build-debug/CMakeFiles/early.dir/lexical.cpp.obj"
-  "C:/Users/Lyudmila/Desktop/Early-early/early/main.cpp" "C:/Users/Lyudmila/Desktop/Early-early/early/cmake-build-debug/CMakeFiles/early.dir/main.cpp.obj"
-  "C:/Users/Lyudmila/Desktop/Early-early/early/parse_tree.cpp" "C:/Users/Lyudmila/Desktop/Early-early/early/cmake-build-debug/CMakeFiles/early.dir/parse_tree.cpp.obj"
+  "/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/early.cpp" "/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/cmake-build-debug/CMakeFiles/early.dir/early.cpp.o"
+  "/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/early_run.cpp" "/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/cmake-build-debug/CMakeFiles/early.dir/early_run.cpp.o"
+  "/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/lexical.cpp" "/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/cmake-build-debug/CMakeFiles/early.dir/lexical.cpp.o"
+  "/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/main.cpp" "/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/cmake-build-debug/CMakeFiles/early.dir/main.cpp.o"
+  "/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/parse_tree.cpp" "/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/cmake-build-debug/CMakeFiles/early.dir/parse_tree.cpp.o"
+  "/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/semantic_analyzer.cpp" "/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/cmake-build-debug/CMakeFiles/early.dir/semantic_analyzer.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

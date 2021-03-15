@@ -6,29 +6,29 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Lyudmila/Desktop/Early-early/early/early.h
+/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/early.h
 gramma.h
-C:/Users/Lyudmila/Desktop/Early-early/early/gramma.h
+/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/gramma.h
 lexer.h
-C:/Users/Lyudmila/Desktop/Early-early/early/lexer.h
+/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/lexer.h
 lexical.h
-C:/Users/Lyudmila/Desktop/Early-early/early/lexical.h
+/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/lexical.h
 
-C:/Users/Lyudmila/Desktop/Early-early/early/early_run.cpp
+/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/early_run.cpp
 early_run.h
-C:/Users/Lyudmila/Desktop/Early-early/early/early_run.h
+/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/early_run.h
 
-C:/Users/Lyudmila/Desktop/Early-early/early/early_run.h
+/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/early_run.h
 early.h
-C:/Users/Lyudmila/Desktop/Early-early/early/early.h
+/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/early.h
 iostream
 -
 lexical.h
-C:/Users/Lyudmila/Desktop/Early-early/early/lexical.h
+/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/lexical.h
 parse_tree.h
-C:/Users/Lyudmila/Desktop/Early-early/early/parse_tree.h
+/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/parse_tree.h
 
-C:/Users/Lyudmila/Desktop/Early-early/early/gramma.h
+/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/gramma.h
 vector
 -
 map
@@ -36,13 +36,13 @@ map
 string
 -
 
-C:/Users/Lyudmila/Desktop/Early-early/early/lexer.h
+/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/lexer.h
 string
 -
 vector
 -
 
-C:/Users/Lyudmila/Desktop/Early-early/early/lexical.h
+/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/lexical.h
 iostream
 -
 fstream
@@ -54,13 +54,13 @@ vector
 algorithm
 -
 
-C:/Users/Lyudmila/Desktop/Early-early/early/parse_tree.h
+/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/parse_tree.h
 early.h
-C:/Users/Lyudmila/Desktop/Early-early/early/early.h
+/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/early.h
 gramma.h
-C:/Users/Lyudmila/Desktop/Early-early/early/gramma.h
+/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/gramma.h
 lexer.h
-C:/Users/Lyudmila/Desktop/Early-early/early/lexer.h
+/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/lexer.h
 lexical.h
-C:/Users/Lyudmila/Desktop/Early-early/early/lexical.h
+/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/lexical.h
 
