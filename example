@@ -1,6 +1,7 @@
 void main() {
 for (i = 0; i < 4; i = i + 1) {
 int a;
-int a;
+a = 31.5;
+int b;
 }
 }

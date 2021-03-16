@@ -11,9 +11,7 @@ class semantic_analyzer {
         vector<int> tree;
         earley *earl;
         lexer lex_;
-        string vars[1000][2];
-        string undef_vars[1000];
-        int count_vars = 0;
+        map <string, string> var_;
 
     semantic_analyzer(lexer& _lex)
     {
@@ -24,7 +22,7 @@ class semantic_analyzer {
 
     void semantic_run();
     void analyze_vars(lexical_analyzer la);
-    void analyze_expr();
+    void analyze_expr(lexical_analyzer la);
     void analyze_keywords();
 
 };

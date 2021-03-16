@@ -25,6 +25,7 @@
       <change beforePath="$PROJECT_DIR$/early_run.h" beforeDir="false" afterPath="$PROJECT_DIR$/early_run.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example" beforeDir="false" afterPath="$PROJECT_DIR$/example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parse_tree.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/parse_tree.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parse_tree.h" beforeDir="false" afterPath="$PROJECT_DIR$/parse_tree.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/semantic_analyzer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/semantic_analyzer.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/semantic_analyzer.h" beforeDir="false" afterPath="$PROJECT_DIR$/semantic_analyzer.h" afterDir="false" />
     </list>
@@ -99,6 +100,9 @@
       <workItem from="1615297024074" duration="2002000" />
       <workItem from="1615299066921" duration="94000" />
       <workItem from="1615792024605" duration="9024000" />
+      <workItem from="1615819061445" duration="1565000" />
+      <workItem from="1615868508070" duration="2054000" />
+      <workItem from="1615871698227" duration="3899000" />
     </task>
     <task id="LOCAL-00001" summary="исправлены правила">
       <created>1615792850808</created>

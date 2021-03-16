@@ -458,6 +458,7 @@ void early_run(lexical_analyzer la) {
         //tree.printRules(tree.pi_);
         semantic_analyzer sem(lex);
         sem.analyze_vars(la);
+        sem.analyze_expr(la);
 
 
     }

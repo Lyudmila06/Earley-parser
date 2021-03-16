@@ -11,6 +11,7 @@
 
 class parse_tree {
 public:
+
     vector<int> pi_;
     earley *erl;
     symbol xk;
