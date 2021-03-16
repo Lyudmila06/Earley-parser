@@ -451,7 +451,7 @@ void early_run(lexical_analyzer la) {
 
 
     if( parser.parse(la) ){
-        std::cout << "success\n";
+        //std::cout << "success\n";
         parser.print();
         parse_tree tree;
         //tree.parse_run(parser);

@@ -22,10 +22,11 @@ void semantic_analyzer::analyze_vars(lexical_analyzer la)
 
     }
     map <string, string> :: iterator it = var_.begin();
-    for (int i = 0; it != var_.end(); it++, i++) {  // выводим их
+    cout << "Defined variables:" << endl;//вывод объявленных переменных для проверки
+    for (int i = 0; it != var_.end(); it++, i++) {
         cout << it->second << " " << it->first << endl;
     }
-    cout << endl << "Success" << endl;
+    cout << endl << "Variables analysis completed" << endl;
 };
 
 
@@ -35,48 +36,43 @@ void semantic_analyzer::analyze_expr(lexical_analyzer la) {
         if (la.table[i][3] == "operator =") {
             it1 = var_.find(la.table[i-1][1]);
             string type_var = it1->second;
+            if (it1 == var_.end()) {
+                cout << "VERY BAD: undefined variable:( I'm trying to do smth" << endl;
+                while (la.table[i][3] != "separator ;" && la.table[i][3] != "separator {") i++;
+                continue;
+            }
             i++;
-            while (la.table[i][3] != "separator ;") {
-                string str = la.table[i][3];
+            while (la.table[i][3] != "separator ;" && la.table[i][3] != "separator {") {
+                string str = la.table[i][1];
                 if (la.table[i][3] == "digit") {
-                    //cout << "there" << endl;
-                    if (str.find('.') != string::npos) {
-                        if (type_var == "double")
-                            i++;
-                        else cout << "Conversion from " << type_var << " to double" << endl;
-                    } else {
-                        if (type_var == "double" | type_var == "int")
-                            i++;
-                        else {
+                    if (str.find('.') != string::npos) { //если присваивается вещественное число
+                        if (type_var != "double") {
+                            cout << "Conversion from " << type_var << " to double" << endl;
+                        }
+                    } else { //если присваивается целое число
+                        if (type_var != "double" && type_var != "int")
                             cout << "Conversion from " << type_var << " to int" << endl;
                         }
                     }
-                }
-                if (la.table[i][3] == "operator 1 poriadka" | la.table[i][3] == "operator 2 poriadka") i++;
-                if (la.table[i][3] == "identifier") {
+                //if (la.table[i][3] == "operator 1 poriadka" | la.table[i][3] == "operator 2 poriadka" || la.table[i][3] == "separator )" || la.table[i][3] == "separator (") i++;
+                if (la.table[i][3] == "identifier") { //если присваивается переменная
                     string type_expr_var = var_[la.table[i][1]];
-                    if ((type_var == type_expr_var) | (type_var == "double" && type_expr_var == "int")) {
-                        i++;
-                    } else {
+                    if ((type_var != type_expr_var) & (type_var != "double" | type_expr_var != "int"))
                         cout << "Conversion from " << type_var << " to " << type_expr_var << endl;
-                    }
                 }
-                if (la.table[i][3] == "logicheskia const") {
-                    if (type_var == "bool") {
-                        i++;
-                    } else {
+                if (la.table[i][3] == "logicheskia const") { //если присваивается true/false
+                    if (type_var != "bool") {
                         cout << "Conversion from " << type_var << " to bool" << endl;
                     }
                 }
-                if (la.table[i][3] == "symbol") {
-                    if (type_var == "char") {
-                        i++;
-                    } else {
+                if (la.table[i][3] == "symbol") { //если присваивается символ
+                    if (type_var != "char") {
                         cout << "Conversion from " << type_var << " to char" << endl;
                     }
                 }
+                i++;
             }
         }
     }
-    cout << "Success express";
+    cout << "Expressions analysis completed" << endl;
 }
