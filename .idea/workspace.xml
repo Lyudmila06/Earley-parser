@@ -58,12 +58,18 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
   <component name="RunManager">
     <configuration name="early" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="early" TARGET_NAME="early" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="early" RUN_TARGET_NAME="early">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -99,6 +105,7 @@
       <workItem from="1615868508070" duration="2054000" />
       <workItem from="1615871698227" duration="5046000" />
       <workItem from="1615893195410" duration="3038000" />
+      <workItem from="1615952514089" duration="8218000" />
     </task>
     <task id="LOCAL-00001" summary="исправлены правила">
       <created>1615792850808</created>

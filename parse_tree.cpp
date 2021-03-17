@@ -1,10 +1,6 @@
-//
-// Created by Lyudmila on 17.12.2020.
-//
-
 #include "parse_tree.h"
 
-void parse_tree::printRules(vector<int> vec) {
+void parse_tree::printRules(vector<int> vec) { //печатает правила по их номерам их vec
     for (int i = 0; i < vec.size(); i++) {
         cout << "\n" << vec[i] << ") " << erl->gr_.symbols_[ erl->gr_.rules_[vec[i]].left_nonterminal_ ].name_ << " -> ";
         for(unsigned int _rp_index = 0; _rp_index < erl->gr_.rules_[vec[i]].right_part_.size(); ++ _rp_index ) {
@@ -12,8 +8,6 @@ void parse_tree::printRules(vector<int> vec) {
         }
     }
 }
-
-
 
 void parse_tree::printSituation(items_t::iterator it_item) { //просто печатает выбранную ситуацию
         std::cout << "[" << erl->gr_.symbols_[ erl->gr_.rules_[ (*it_item).rule_index_ ].left_nonterminal_ ].name_ << "-->";
@@ -32,11 +26,9 @@ void parse_tree::printSituation(items_t::iterator it_item) { //просто пе
         std::cout <<"\n";
 }
 
-
 void parse_tree::parse_run(earley& erl) {
     this->erl = &erl;
     states_t::iterator it = erl.states_.begin(), end = erl.states_.end();
-
     //поиск в In ситуации [S->a*, 0]
     unsigned int _rp_index = 0;
     int n = erl.states_.size() - 1;
@@ -59,7 +51,6 @@ void parse_tree::parse_run(earley& erl) {
 
 }
 
-
 bool parse_tree::isR(symbol x, unsigned int r){
     states_t::iterator it = erl->states_.begin();
     //cout << " r: " << r << " \n";
@@ -78,8 +69,6 @@ bool parse_tree::isR(symbol x, unsigned int r){
 
 void parse_tree::R(items_t::iterator& a, int j){
     pi_.push_back((*a).rule_index_); //1)
-    //print_pi();
-    //cout << "pi_: " << (*a).rule_index_ << "\n";
     //2)
     int k = erl->gr_.rules_[ (*a).rule_index_ ].right_part_.size();
     int c = j;
@@ -115,8 +104,6 @@ void parse_tree::R(items_t::iterator& a, int j){
                 }
 
             }
-
-
         }
     }
 }

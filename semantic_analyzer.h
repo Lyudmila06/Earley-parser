@@ -8,15 +8,13 @@
 
 class semantic_analyzer {
     public:
-        vector<int> tree;
-        earley *earl;
+        //vector<int> tree;
+        //earley *earl;
         lexer lex_;
         map <string, string> var_;
 
     semantic_analyzer(lexer& _lex)
     {
-        //this->tree = pi_;
-        //this->earl = earl;
         this->lex_ = _lex;
     }
 
@@ -24,7 +22,6 @@ class semantic_analyzer {
     void analyze_vars(lexical_analyzer la);
     void analyze_expr(lexical_analyzer la);
     void analyze_keywords();
-
 };
 
 
