@@ -47,7 +47,7 @@ bool lexical_analyzer::isReservedName(const string &str) {
 }
 
 bool lexical_analyzer::isOperator(const string &str) {
-    const vector <string> operators{"<", ">", "<=", ">=", "*", "+", "-", "/", "=", "!=", "&&", "||", "==", "!"};
+    const vector <string> operators{"<", ">", "<=", ">=", "*", "+", "-", "/", "=", "!=", "&&", "||", "==", "!", "mod"};
     for(const auto& op : operators)
         if (op == str)
             return true;
@@ -75,7 +75,7 @@ void lexical_analyzer::printRoleOfToken(const string& token) {
         table[count][0] = "operator";
         table[count][1] = token;
         table[count][2] = to_string(pos);
-        if (token == "*" || token == "/") {
+        if (token == "*" || token == "/" || token == "mod") {
             table[count][3] = "operator 1 poriadka";
         }
         else if (token == "+" || token == "-") {

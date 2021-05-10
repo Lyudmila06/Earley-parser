@@ -3,7 +3,7 @@
 //
 
 #include "early_run.h"
-
+#include "generator.h"
 
 void early_run(lexical_analyzer la) {
 
@@ -459,6 +459,9 @@ void early_run(lexical_analyzer la) {
         semantic_analyzer sem(lex);
         sem.analyze_vars(la);
         sem.analyze_expr(la);
+        generator gen(la);
+        gen.generator_run();
+
 
 
     }

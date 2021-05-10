@@ -1,8 +1,15 @@
-void main() {
-int i;
-for (i = 0; i < 4; i = i + 1) {
-int a;
-a = 31.5;
-b = 4;
-}
+int main() {
+    int a = 5;
+    int b = 30;
+    int i;
+    bool condition = false;
+    while (a < b){
+        condition = true;
+        for (i = 1; i < 3; i = i + 1) {
+            a = a * i;
+        }
+    }
+    if (condition == true){
+        b = b mod 10;
+    }
 }

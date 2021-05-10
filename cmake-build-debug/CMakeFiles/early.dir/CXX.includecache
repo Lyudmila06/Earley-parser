@@ -6,31 +6,33 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/early.h
+/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/early.h
 gramma.h
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/gramma.h
+/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/gramma.h
 lexer.h
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/lexer.h
+/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/lexer.h
 lexical.h
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/lexical.h
+/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/lexical.h
 
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/early_run.cpp
-early_run.h
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/early_run.h
+/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/generator.cpp
+generator.h
+/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/generator.h
 
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/early_run.h
+/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/generator.h
 early.h
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/early.h
-iostream
--
+/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/early.h
+gramma.h
+/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/gramma.h
+lexer.h
+/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/lexer.h
 lexical.h
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/lexical.h
+/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/lexical.h
 parse_tree.h
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/parse_tree.h
-semantic_analyzer.h
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/semantic_analyzer.h
+/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/parse_tree.h
+vector
+-
 
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/gramma.h
+/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/gramma.h
 vector
 -
 map
@@ -38,13 +40,13 @@ map
 string
 -
 
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/lexer.h
+/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/lexer.h
 string
 -
 vector
 -
 
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/lexical.h
+/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/lexical.h
 iostream
 -
 fstream
@@ -56,45 +58,13 @@ vector
 algorithm
 -
 
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/main.cpp
-iostream
--
-string
--
-iomanip
--
-lexical.h
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/lexical.h
-early_run.h
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/early_run.h
-
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/parse_tree.cpp
-parse_tree.h
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/parse_tree.h
-
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/parse_tree.h
+/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/parse_tree.h
 early.h
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/early.h
+/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/early.h
 gramma.h
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/gramma.h
+/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/gramma.h
 lexer.h
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/lexer.h
+/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/lexer.h
 lexical.h
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/lexical.h
-
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/semantic_analyzer.cpp
-semantic_analyzer.h
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/semantic_analyzer.h
-
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/semantic_analyzer.h
-early.h
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/early.h
-gramma.h
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/gramma.h
-lexer.h
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/lexer.h
-lexical.h
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/lexical.h
-parse_tree.h
-/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/parse_tree.h
+/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/lexical.h
 

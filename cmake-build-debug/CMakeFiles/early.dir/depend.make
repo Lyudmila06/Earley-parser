@@ -10,11 +10,20 @@ CMakeFiles/early.dir/early.cpp.o: ../lexical.h
 CMakeFiles/early.dir/early_run.cpp.o: ../early.h
 CMakeFiles/early.dir/early_run.cpp.o: ../early_run.cpp
 CMakeFiles/early.dir/early_run.cpp.o: ../early_run.h
+CMakeFiles/early.dir/early_run.cpp.o: ../generator.h
 CMakeFiles/early.dir/early_run.cpp.o: ../gramma.h
 CMakeFiles/early.dir/early_run.cpp.o: ../lexer.h
 CMakeFiles/early.dir/early_run.cpp.o: ../lexical.h
 CMakeFiles/early.dir/early_run.cpp.o: ../parse_tree.h
 CMakeFiles/early.dir/early_run.cpp.o: ../semantic_analyzer.h
+
+CMakeFiles/early.dir/generator.cpp.o: ../early.h
+CMakeFiles/early.dir/generator.cpp.o: ../generator.cpp
+CMakeFiles/early.dir/generator.cpp.o: ../generator.h
+CMakeFiles/early.dir/generator.cpp.o: ../gramma.h
+CMakeFiles/early.dir/generator.cpp.o: ../lexer.h
+CMakeFiles/early.dir/generator.cpp.o: ../lexical.h
+CMakeFiles/early.dir/generator.cpp.o: ../parse_tree.h
 
 CMakeFiles/early.dir/lexical.cpp.o: ../lexical.cpp
 CMakeFiles/early.dir/lexical.cpp.o: ../lexical.h

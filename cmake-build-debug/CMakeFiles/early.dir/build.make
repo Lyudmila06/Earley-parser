@@ -54,19 +54,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/Lyudmila/AppData/Local/JetBrains/CLion2020.3/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /cygdrive/c/Users/User/AppData/Local/JetBrains/CLion2020.2/cygwin_cmake/bin/cmake.exe
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/Lyudmila/AppData/Local/JetBrains/CLion2020.3/cygwin_cmake/bin/cmake.exe -E rm -f
+RM = /cygdrive/c/Users/User/AppData/Local/JetBrains/CLion2020.2/cygwin_cmake/bin/cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master
+CMAKE_SOURCE_DIR = "/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/cmake-build-debug
+CMAKE_BINARY_DIR = "/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/early.dir/depend.make
@@ -79,81 +79,94 @@ include CMakeFiles/early.dir/flags.make
 
 CMakeFiles/early.dir/main.cpp.o: CMakeFiles/early.dir/flags.make
 CMakeFiles/early.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/early.dir/main.cpp.o"
-	/usr/bin/g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/early.dir/main.cpp.o -c /cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/early.dir/main.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/early.dir/main.cpp.o -c "/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/main.cpp"
 
 CMakeFiles/early.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/early.dir/main.cpp.i"
-	/usr/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/main.cpp > CMakeFiles/early.dir/main.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/main.cpp" > CMakeFiles/early.dir/main.cpp.i
 
 CMakeFiles/early.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/early.dir/main.cpp.s"
-	/usr/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/main.cpp -o CMakeFiles/early.dir/main.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/main.cpp" -o CMakeFiles/early.dir/main.cpp.s
 
 CMakeFiles/early.dir/early.cpp.o: CMakeFiles/early.dir/flags.make
 CMakeFiles/early.dir/early.cpp.o: ../early.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/early.dir/early.cpp.o"
-	/usr/bin/g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/early.dir/early.cpp.o -c /cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/early.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/early.dir/early.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/early.dir/early.cpp.o -c "/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/early.cpp"
 
 CMakeFiles/early.dir/early.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/early.dir/early.cpp.i"
-	/usr/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/early.cpp > CMakeFiles/early.dir/early.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/early.cpp" > CMakeFiles/early.dir/early.cpp.i
 
 CMakeFiles/early.dir/early.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/early.dir/early.cpp.s"
-	/usr/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/early.cpp -o CMakeFiles/early.dir/early.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/early.cpp" -o CMakeFiles/early.dir/early.cpp.s
 
 CMakeFiles/early.dir/lexical.cpp.o: CMakeFiles/early.dir/flags.make
 CMakeFiles/early.dir/lexical.cpp.o: ../lexical.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/early.dir/lexical.cpp.o"
-	/usr/bin/g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/early.dir/lexical.cpp.o -c /cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/lexical.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/early.dir/lexical.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/early.dir/lexical.cpp.o -c "/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/lexical.cpp"
 
 CMakeFiles/early.dir/lexical.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/early.dir/lexical.cpp.i"
-	/usr/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/lexical.cpp > CMakeFiles/early.dir/lexical.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/lexical.cpp" > CMakeFiles/early.dir/lexical.cpp.i
 
 CMakeFiles/early.dir/lexical.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/early.dir/lexical.cpp.s"
-	/usr/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/lexical.cpp -o CMakeFiles/early.dir/lexical.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/lexical.cpp" -o CMakeFiles/early.dir/lexical.cpp.s
 
 CMakeFiles/early.dir/early_run.cpp.o: CMakeFiles/early.dir/flags.make
 CMakeFiles/early.dir/early_run.cpp.o: ../early_run.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/early.dir/early_run.cpp.o"
-	/usr/bin/g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/early.dir/early_run.cpp.o -c /cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/early_run.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/early.dir/early_run.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/early.dir/early_run.cpp.o -c "/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/early_run.cpp"
 
 CMakeFiles/early.dir/early_run.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/early.dir/early_run.cpp.i"
-	/usr/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/early_run.cpp > CMakeFiles/early.dir/early_run.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/early_run.cpp" > CMakeFiles/early.dir/early_run.cpp.i
 
 CMakeFiles/early.dir/early_run.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/early.dir/early_run.cpp.s"
-	/usr/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/early_run.cpp -o CMakeFiles/early.dir/early_run.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/early_run.cpp" -o CMakeFiles/early.dir/early_run.cpp.s
 
 CMakeFiles/early.dir/parse_tree.cpp.o: CMakeFiles/early.dir/flags.make
 CMakeFiles/early.dir/parse_tree.cpp.o: ../parse_tree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/early.dir/parse_tree.cpp.o"
-	/usr/bin/g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/early.dir/parse_tree.cpp.o -c /cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/parse_tree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/early.dir/parse_tree.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/early.dir/parse_tree.cpp.o -c "/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/parse_tree.cpp"
 
 CMakeFiles/early.dir/parse_tree.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/early.dir/parse_tree.cpp.i"
-	/usr/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/parse_tree.cpp > CMakeFiles/early.dir/parse_tree.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/parse_tree.cpp" > CMakeFiles/early.dir/parse_tree.cpp.i
 
 CMakeFiles/early.dir/parse_tree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/early.dir/parse_tree.cpp.s"
-	/usr/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/parse_tree.cpp -o CMakeFiles/early.dir/parse_tree.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/parse_tree.cpp" -o CMakeFiles/early.dir/parse_tree.cpp.s
 
 CMakeFiles/early.dir/semantic_analyzer.cpp.o: CMakeFiles/early.dir/flags.make
 CMakeFiles/early.dir/semantic_analyzer.cpp.o: ../semantic_analyzer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/early.dir/semantic_analyzer.cpp.o"
-	/usr/bin/g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/early.dir/semantic_analyzer.cpp.o -c /cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/semantic_analyzer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/early.dir/semantic_analyzer.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/early.dir/semantic_analyzer.cpp.o -c "/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/semantic_analyzer.cpp"
 
 CMakeFiles/early.dir/semantic_analyzer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/early.dir/semantic_analyzer.cpp.i"
-	/usr/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/semantic_analyzer.cpp > CMakeFiles/early.dir/semantic_analyzer.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/semantic_analyzer.cpp" > CMakeFiles/early.dir/semantic_analyzer.cpp.i
 
 CMakeFiles/early.dir/semantic_analyzer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/early.dir/semantic_analyzer.cpp.s"
-	/usr/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/semantic_analyzer.cpp -o CMakeFiles/early.dir/semantic_analyzer.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/semantic_analyzer.cpp" -o CMakeFiles/early.dir/semantic_analyzer.cpp.s
+
+CMakeFiles/early.dir/generator.cpp.o: CMakeFiles/early.dir/flags.make
+CMakeFiles/early.dir/generator.cpp.o: ../generator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/early.dir/generator.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/early.dir/generator.cpp.o -c "/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/generator.cpp"
+
+CMakeFiles/early.dir/generator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/early.dir/generator.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/generator.cpp" > CMakeFiles/early.dir/generator.cpp.i
+
+CMakeFiles/early.dir/generator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/early.dir/generator.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/generator.cpp" -o CMakeFiles/early.dir/generator.cpp.s
 
 # Object files for target early
 early_OBJECTS = \
@@ -162,7 +175,8 @@ early_OBJECTS = \
 "CMakeFiles/early.dir/lexical.cpp.o" \
 "CMakeFiles/early.dir/early_run.cpp.o" \
 "CMakeFiles/early.dir/parse_tree.cpp.o" \
-"CMakeFiles/early.dir/semantic_analyzer.cpp.o"
+"CMakeFiles/early.dir/semantic_analyzer.cpp.o" \
+"CMakeFiles/early.dir/generator.cpp.o"
 
 # External object files for target early
 early_EXTERNAL_OBJECTS =
@@ -173,9 +187,10 @@ early.exe: CMakeFiles/early.dir/lexical.cpp.o
 early.exe: CMakeFiles/early.dir/early_run.cpp.o
 early.exe: CMakeFiles/early.dir/parse_tree.cpp.o
 early.exe: CMakeFiles/early.dir/semantic_analyzer.cpp.o
+early.exe: CMakeFiles/early.dir/generator.cpp.o
 early.exe: CMakeFiles/early.dir/build.make
 early.exe: CMakeFiles/early.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable early.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable early.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/early.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -188,6 +203,6 @@ CMakeFiles/early.dir/clean:
 .PHONY : CMakeFiles/early.dir/clean
 
 CMakeFiles/early.dir/depend:
-	cd /cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master /cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master /cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/cmake-build-debug /cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/cmake-build-debug /cygdrive/c/Users/Lyudmila/Desktop/Earley-parser-master/cmake-build-debug/CMakeFiles/early.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master" "/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master" "/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/cmake-build-debug" "/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/cmake-build-debug" "/cygdrive/c/Users/User/Downloads/Translator-c-to-javascript-master (1)/Translator-c-to-javascript-master/cmake-build-debug/CMakeFiles/early.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/early.dir/depend
 
